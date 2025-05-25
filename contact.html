@@ -11,6 +11,15 @@
     nav a:hover { text-decoration: underline; }
     main { padding: 40px 20px; max-width: 900px; margin: auto; }
     footer { background: #222; color: #ccc; text-align: center; padding: 15px; position: fixed; bottom: 0; width: 100%; }
+    footer {                            <!-- force footer to behave as it is -->
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  background-color: black; 
+}
     form { max-width: 500px; margin-top: 20px; }
     label { display: block; margin-top: 15px; }
     input, textarea { width: 100%; padding: 8px; margin-top: 5px; box-sizing: border-box; }
@@ -19,14 +28,13 @@
   </style>
 </head>
 <body>
-
 <nav>
   <a href="index.html">Home</a>
   <a href="skill.html">Skills</a>
   <a href="education.html">Education</a>
   <a href="contact.html">Contact</a>
 </nav>
-
+<div>
 <main>
   <h1>Contact Me</h1>
   <p>Want to get in touch? Fill out the form below and I’ll get back to you soon.</p>
@@ -44,6 +52,8 @@
     <button type="submit">Send Message</button>
   </form>
 </body>
+</main>
+</div>  
 <footer>
   &copy; 2025 Fabalos
 </footer>  
